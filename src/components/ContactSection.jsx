@@ -1,7 +1,7 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react"
 import {cn} from "@/lib/utils"
 import { useRef, useState } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from "@emailjs/browser";
 import { useToastStore } from '../hooks/useToast'
 
 export const ContactSection=()=>{
@@ -85,9 +85,9 @@ export const ContactSection=()=>{
                             </div>
                             <div>
                                 <h4 className="font-medium"> Phone</h4>
-                                <a href="tel:*12345678"
+                                <a href="tel:*8778566255"
                                 className="tex-muted-foreground hover:text-primary transition-colors">
-                                  +91 13457909
+                                  +91 8778566255
                                 </a>
                             </div>
 
