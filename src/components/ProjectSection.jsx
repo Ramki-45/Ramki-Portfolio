@@ -8,7 +8,7 @@ const projects = [
     image: "/Projects/nxtwatch.png",
     tags: ["React", "Node", "Express"],
     domainUrl: "https://nxt045.ccbp.tech",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ramki-45/NxtWatch",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const projects = [
     image: "/Projects/emojigame.png",
     tags: ["React", "Node", "Express"],
     domainUrl: "https://emojiram01.ccbp.tech",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ramki-45/Emoji-Game",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const projects = [
     image: "/Projects/colorgradient.png",
     tags: ["React", "Node", "Express"],
     domainUrl: "https://ramkigr01.ccbp.tech",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ramki-45/Gradient-Generator",
   },
 ];
 
