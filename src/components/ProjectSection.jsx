@@ -26,7 +26,7 @@ const projects = [
     image: "/Projects/jobyapp.png",
     tags: ["React", "Node", "Express"],
     domainUrl: "https://joby02.ccbp.tech",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ramki-45/Jobby-App",
   },
   {
     id: 4,
