@@ -1,39 +1,48 @@
-import {Moon,Sun} from "lucide-react"
-import { useEffect, useState } from "react"
-import {cn} from "@/lib/utils";
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
-export const ThemeToggle=()=>{
-    const [isDarkMode,setIsDarkMode]=useState(false);
-    
-    useEffect(()=>{
-        const storedTheme=localStorage.getItem("theme")
-        if (storedTheme==="dark"){
-            setIsDarkMode(true)
-            document.documentElement.classList.add("dark")
-        }
-        else{
-            setIsDarkMode(false)
-            document.documentElement.classList.remove("dark")
-        }
-    },[])
+export const ThemeToggle = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-    const toggleTheme=()=>{
-        if (isDarkMode){
-           document.documentElement.classList.remove("dark")
-           localStorage.setItem("theme","light")
-           setIsDarkMode(false)
-        }
-        else{
-            document.documentElement.classList.add("dark")
-            localStorage.setItem("theme","dark")
-            setIsDarkMode(true)
-        }
+  // Load saved theme or system preference
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setIsDarkMode(false);
     }
-    return <>
-    <button onClick={toggleTheme}
-       className={cn("z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden")}>
-        {isDarkMode?<Sun className="h-6 w-6 text-yellow-300"/>:<Moon className="h-6 w-6 text-blue-300"/>}
-        </button>
-    </>
-}
+  }, []);
+
+  // Toggle dark/light mode
+  const toggleTheme = () => {
+    if (isDarkMode) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDarkMode(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDarkMode(true);
+    }
+  };
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className={`z-50 p-3 rounded-full transition-all duration-300 
+        bg-card text-primary-foreground shadow-md hover:scale-105`}
+      aria-label="Toggle theme"
+    >
+      {isDarkMode ? (
+        <Sun className="h-6 w-6 text-yellow-400" />
+      ) : (
+        <Moon className="h-6 w-6 text-blue-500" />
+      )}
+    </button>
+  );
+};
