@@ -3,6 +3,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "GroPilot",
+    description: "A Beautifull Grocery application",
+    image: "/Projects/gropilot.png",
+    tags: ["React", "Node", "Express", "Mongo DB", "Razorpay"],
+    domainUrl: "https://gropilot-frontend-tau.vercel.app",
+    githubUrl: "https://github.com/Ramki-45/GroPilot",
+  },
+  {
+    id: 2,
     title: "Nxt Watch",
     description: "A beautiful media player app using React",
     image: "/Projects/nxtwatch.png",
@@ -11,7 +20,7 @@ const projects = [
     githubUrl: "https://github.com/Ramki-45/NxtWatch",
   },
   {
-    id: 2,
+    id: 3,
     title: "Nxt Trendz",
     description: "A beautiful E-Commerce app using React With API Integration",
     image: "/Projects/nxttrendz.png",
@@ -20,7 +29,7 @@ const projects = [
     githubUrl: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Jobby App",
     description: "A Job search Application using React with API Integration",
     image: "/Projects/jobyapp.png",
@@ -29,7 +38,7 @@ const projects = [
     githubUrl: "https://github.com/Ramki-45/Jobby-App",
   },
   {
-    id: 4,
+    id: 5,
     title: "Emoji Game",
     description:
       "Test your memory by clicking each emoji only once. Can you beat your top score? 🧠✨",
@@ -39,10 +48,9 @@ const projects = [
     githubUrl: "https://github.com/Ramki-45/Emoji-Game",
   },
   {
-    id: 5,
+    id: 6,
     title: "Color Gradient",
-    description:
-      "Generates smooth and customizable gradients dynamically.",
+    description: "Generates smooth and customizable gradients dynamically.",
     image: "/Projects/colorgradient.png",
     tags: ["React", "Node", "Express"],
     domainUrl: "https://ramkigr01.ccbp.tech",

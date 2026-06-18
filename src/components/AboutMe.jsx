@@ -1,4 +1,4 @@
-import { Code, User, Briefcase,Download} from "lucide-react";
+import { Code, User, Briefcase, Download } from "lucide-react";
 
 export const AboutMe = () => {
   return (
@@ -16,8 +16,8 @@ export const AboutMe = () => {
             </h3>
 
             <p className="text-foreground/70">
-              I specialize in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              I specialize in creating responsive, accessible, and performant
+              web applications using modern technologies.
             </p>
 
             <p className="text-foreground/70">
@@ -31,8 +31,8 @@ export const AboutMe = () => {
                 Get In Touch
               </a>
               <a
-                 href="/ramki_r.pdf"
-                 download="ramki_r.pdf"
+                href="/Ramki_June_2026.pdf"
+                download="Ramki_June_2026.pdf"
                 className="flex justify-center px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -43,10 +43,22 @@ export const AboutMe = () => {
 
           {/* Right Side */}
           <div className="grid grid-cols-1 gap-6">
-            {[ 
-              { Icon: Code, title: "Web Development", desc: "Creating responsive websites and web applications with modern frameworks." },
-              { Icon: User, title: "UI/UX Design", desc: "Designing intuitive user interfaces and seamless user experiences." },
-              { Icon: Briefcase, title: "Project Management", desc: "Leading projects from conception to completion with agile methodologies." }
+            {[
+              {
+                Icon: Code,
+                title: "Web Development",
+                desc: "Creating responsive websites and web applications with modern frameworks.",
+              },
+              {
+                Icon: User,
+                title: "UI/UX Design",
+                desc: "Designing intuitive user interfaces and seamless user experiences.",
+              },
+              {
+                Icon: Briefcase,
+                title: "Project Management",
+                desc: "Leading projects from conception to completion with agile methodologies.",
+              },
             ].map(({ Icon, title, desc }) => (
               <div key={title} className="gradient-border p-6 card-hover">
                 <div className="flex items-start gap-4">
