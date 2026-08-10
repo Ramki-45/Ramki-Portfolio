@@ -22,6 +22,16 @@ const projects = [
   },
   {
     id: 3,
+    title: "Visiter-Management",
+    description: "A Beautifull Visitor Management application",
+    image: "/Projects/visiter-pass.png",
+    tags: ["React", "Node", "Express", "Mongo DB"],
+    domainUrl: "https://visitor-frontend45.vercel.app",
+    githubUrl: "https://github.com/Ramki-45/visitor-management-system",
+  },
+
+  {
+    id: 4,
     title: "Nxt Watch",
     description: "A beautiful media player app using React",
     image: "/Projects/nxtwatch.png",
@@ -30,7 +40,7 @@ const projects = [
     githubUrl: "https://github.com/Ramki-45/NxtWatch",
   },
   {
-    id: 4,
+    id: 5,
     title: "Nxt Trendz",
     description: "A beautiful E-Commerce app using React With API Integration",
     image: "/Projects/nxttrendz.png",
@@ -39,7 +49,7 @@ const projects = [
     githubUrl: "#",
   },
   {
-    id: 5,
+    id: 6,
     title: "Jobby App",
     description: "A Job search Application using React with API Integration",
     image: "/Projects/jobyapp.png",
@@ -48,7 +58,7 @@ const projects = [
     githubUrl: "https://github.com/Ramki-45/Jobby-App",
   },
   {
-    id: 6,
+    id: 7,
     title: "Emoji Game",
     description:
       "Test your memory by clicking each emoji only once. Can you beat your top score? 🧠✨",
@@ -58,7 +68,7 @@ const projects = [
     githubUrl: "https://github.com/Ramki-45/Emoji-Game",
   },
   {
-    id: 7,
+    id: 8,
     title: "Color Gradient",
     description: "Generates smooth and customizable gradients dynamically.",
     image: "/Projects/colorgradient.png",
